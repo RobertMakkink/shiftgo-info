@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShiftGo: roosters en prikklok</title>
+<meta name="description" content="ShiftGo regelt het rooster en de uren van je team: planbord, in- en uitklokken met GPS, QR, NFC of kiosk, verlof, ruilen en chat. Op de website en in de app.">
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #0b1020; --ink2: #151b2e; --ivory: #f6f1e7; --mist: #a9b0c3; --gold: #d4b06a; --gold2: #f3dfb3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: radial-gradient(120% 90% at 80% 0%, #1b2440 0%, var(--ink) 55%, #070a14 100%) fixed; color: var(--ivory); font: 500 17px/1.6 Manrope, system-ui, sans-serif; }
+  a { color: var(--gold2); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; font-family: Fraunces, serif; font-size: 26px; text-decoration: none; color: var(--ivory); }
+  .brand img { width: 40px; height: 40px; border-radius: 10px; }
+  .brand em { color: var(--gold); }
+  .hero { display: grid; gap: 40px; grid-template-columns: 1fr; padding: 40px 0 20px; }
+  h1 { font-family: Fraunces, serif; font-weight: 500; font-size: clamp(40px, 7vw, 72px); line-height: 1.05; margin: 0; letter-spacing: -0.02em; }
+  h1 em { color: var(--gold); }
+  .lead { color: #e9e1d0; font-size: 20px; max-width: 620px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .btn { display: inline-block; padding: 14px 22px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  .btn.gold { background: linear-gradient(135deg, var(--gold2), var(--gold) 50%, #9c7a3c); color: var(--ink); }
+  .btn.line { border: 1px solid rgba(212, 176, 106, .45); color: var(--gold2); }
+  .banner { width: 100%; border-radius: 24px; display: block; box-shadow: 0 40px 100px rgba(0, 0, 0, .45); }
+  section { padding: 56px 0; }
+  h2 { font-family: Fraunces, serif; font-weight: 500; font-size: 36px; margin: 0 0 24px; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .08); border-radius: 20px; padding: 22px; }
+  .card h3 { margin: 0 0 8px; color: var(--gold2); font-size: 17px; text-transform: uppercase; letter-spacing: .12em; }
+  .card ul { margin: 0; padding-left: 18px; color: #d8d2c4; }
+  .shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .shots img { width: 100%; border-radius: 18px; display: block; }
+  footer { border-top: 1px solid rgba(255, 255, 255, .08); padding: 28px 0 40px; color: var(--mist); font-size: 14px; }
+  @media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.1fr; align-items: center; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://shiftgo.nl"><img src="assets/logo.png" alt="">Shift<em>Go</em></a>
+      <a class="btn line" href="https://shiftgo.nl">Naar shiftgo.nl</a>
+    </header>
+
+    <div class="hero">
+      <div>
+        <h1>Roosters en <em>prikklok</em> voor je hele team.</h1>
+        <p class="lead">Plannen, in- en uitklokken, verlof, ruilen en chat. Op de website en in de app voor Android en iPhone.</p>
+        <div class="cta">
+          <a class="btn gold" href="https://shiftgo.nl">Gratis proberen</a>
+          <a class="btn line" href="https://play.google.com/store/apps/details?id=app.shiftgo.mobile">Google Play</a>
+          <span class="btn line" style="opacity:.6">App Store: binnenkort</span>
+        </div>
+      </div>
+      <img class="banner" src="assets/banner.png" alt="De ShiftGo-app op twee telefoons">
+    </div>
+
+    <section>
+      <h2>Wat ShiftGo doet</h2>
+      <div class="grid">
+        <div class="card"><h3>Roosteren</h3><ul><li>Planbord met sjablonen en bezetting</li><li>Automatisch inplannen</li><li>Loonkosten en budget per week</li><li>Open diensten, ruilen, vervanging</li></ul></div>
+        <div class="card"><h3>Klokken</h3><ul><li>GPS, QR-code, NFC-tag of kiosk</li><li>Werkt ook zonder internet</li><li>Uren goedkeuren</li><li>Export naar je salarisadministratie</li></ul></div>
+        <div class="card"><h3>Het team</h3><ul><li>Beschikbaarheid en verlof</li><li>Ziek- en betermelden</li><li>Chat en mededelingen</li><li>Nederlands, Engels, Pools, Turks en Spaans</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>De app</h2>
+      <div class="shots">
+        <img src="assets/scherm-1-vandaag.png" alt="Vandaag: in- en uitklokken">
+        <img src="assets/scherm-2-rooster.png" alt="Je rooster">
+        <img src="assets/scherm-4-verlof.png" alt="Verlof aanvragen">
+        <img src="assets/scherm-5-berichten.png" alt="Berichten met je team">
+      </div>
+    </section>
+
+    <footer>
+      ShiftGo · <a href="https://shiftgo.nl">shiftgo.nl</a> · <a href="mailto:info@shiftgo.nl">info@shiftgo.nl</a><br>
+      Dit is de openbare informatiepagina van ShiftGo; de broncode is niet openbaar.
+    </footer>
+  </div>
+</body>
+</html>
